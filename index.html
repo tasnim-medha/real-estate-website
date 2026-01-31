@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Real Estate Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HERO WITH SLIDER -->
+<div class="hero">
+<img id="slideImg" class="slider-img"
+src="https://images.unsplash.com/photo-1568605114967-8130f3a36994">
+
+<div class="overlay">
+<h1>Find Your Dream Home</h1>
+<p>Best Properties At Best Price</p>
+<button onclick="scrollToProperty()">View Properties</button>
+</div>
+</div>
+
+<!-- FILTER -->
+<h2 id="properties">Available Properties</h2>
+
+<div class="contact">
+<select id="priceFilter" onchange="filterProperty()">
+<option value="all">All Prices</option>
+<option value="low">Below $80k</option>
+<option value="high">Above $80k</option>
+</select>
+</div>
+
+<!-- PROPERTY LIST -->
+<div class="grid">
+
+<div class="card high">
+<img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994">
+<h3>Luxury Villa</h3>
+<p>$120,000</p>
+<button onclick="openDetail()">View Details</button>
+</div>
+
+<div class="card high">
+<img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be">
+<h3>Modern House</h3>
+<p>$95,000</p>
+<button onclick="openDetail()">View Details</button>
+</div>
+
+<div class="card low">
+<img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4">
+<h3>Apartment</h3>
+<p>$70,000</p>
+<button onclick="openDetail()">View Details</button>
+</div>
+
+</div>
+
+<!-- BOOKING -->
+<h2>Book Property</h2>
+<div class="contact">
+<input type="text" id="name" placeholder="Your Name">
+<input type="text" id="phone" placeholder="Phone Number">
+<button onclick="bookProperty()">Book Now</button>
+</div>
+
+<!-- PAYMENT -->
+<h2>Payment Option</h2>
+<div class="contact">
+<button onclick="payLater()">Pay Later</button>
+<button onclick="payOnline()">Pay Online</button>
+</div>
+
+<!-- CONTACT -->
+<h2>Contact Agent</h2>
+<div class="contact">
+<input type="text" id="cname" placeholder="Name">
+<input type="text" id="cphone" placeholder="Phone">
+<textarea id="cmsg" placeholder="Message"></textarea>
+<button onclick="sendMessage()">Send Message</button>
+</div>
+
+<!-- ADMIN -->
+<h2>Admin</h2>
+<div class="contact">
+<button onclick="adminLogin()">Admin Login</button>
+</div>
+
+<!-- WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/8801234567890" target="_blank">
+WhatsApp
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
